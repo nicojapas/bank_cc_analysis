@@ -1,4 +1,5 @@
 <img src="img/bank_cc_logo.png" alt="logo">
+
 # Project: Credit Cards
 
 **Background**: We work as a risk analyst with a bank. Apart from the other banking and loan services, the bank also provides credit card services which is a very important source of revenue for the bank. The bank wants to understand the demographics and other characteristics of its customers that accept a credit card offer and that do not accept a credit card.
