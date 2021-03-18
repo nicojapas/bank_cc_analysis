@@ -1,37 +1,65 @@
-## Welcome to GitHub Pages
+<img src="img/bank_cc_logo.png" alt="logo">
 
-You can use the [editor on GitHub](https://github.com/nicojapas/bank_cc_analysis/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+# Project: Credit Cards
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**Background**: We work as a risk analyst with a bank. Apart from the other banking and loan services, the bank also provides credit card services which is a very important source of revenue for the bank. The bank wants to understand the demographics and other characteristics of its customers that accept a credit card offer and that do not accept a credit card.
+Usually the observational data for these kinds of problems is somewhat limited in that often the company sees only those who respond to an offer. To get around this, the bank designs a focused marketing study, with 18,000 current bank customers. This focused approach allows the bank to know who does and does not respond to the offer, and to use existing demographic data that is already available on each customer.
 
-### Markdown
+**Objective**: The tasks are building a model that will provide insight into why some bank customers accept credit card offers, and identifying other potential areas of opportunities that the bank wants to understand from the data.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Tools Used
 
-```markdown
-Syntax highlighted code block
+* Python, i.e. Jupyter Notebook for general analysis and coding
+* Scikit-learn library for Machine Learning
+* Tableau for visualization and exploration of the data
+* MySQL Workbench for further data analysis
 
-# Header 1
-## Header 2
-### Header 3
+## Steps of the Process
 
-- Bulleted
-- List
+**1. Loading Data and basic editing**
 
-1. Numbered
-2. List
+1.1 Import .csv file into a dataframe using pandas
+1.2 Make column names compliant with the **underscore_separated** naming convention
+1.3 SQL Queries Section
 
-**Bold** and _Italic_ and `Code` text
+**2. Data Cleaning**
 
-[Link](url) and ![Image](src)
-```
+2.1 Check dataframe dtypes
+2.2 Fix wrong dtypes
+2.3 Deal with null values
+2.4 Saving the clean dataframe into a new .csv file to use with Tableau and other software.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+**3. Separate the variables into numerical and categorical**
 
-### Jekyll Themes
+**4. Data wrangling**
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/nicojapas/bank_cc_analysis/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+4.1 Numerical variables 
+4.2 Categorical variables
 
-### Support or Contact
+**5. Standardize and encode**
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+5.1 Standardize numerical variables
+5.2 Encode categorical variables
+5.3 Put all the features together
+
+**6. Deal with data imbalance**
+
+**7. Test-train split**
+
+**8. Training Predictive Models**
+
+8.1 Logistic Regression Model
+8.2 KNN Classifier
+8.3 Decision Tree Classifier
+8.4 Random Forest Classifier
+
+**9. Validation of the model**
+
+9.1 Evaluate with Confusion Matrix
+9.2 Evaluate with ROC and AUC
+
+**10. Identify Overfitting**
+
+
+## Links
+https://github.com/nicojapas/bank_cc_analysis
