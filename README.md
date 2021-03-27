@@ -33,7 +33,16 @@ Usually the observational data for these kinds of problems is somewhat limited i
 
 **4. Data wrangling**
 
-4.1 Numerical variables 
+4.1 Numerical variables
+
+Check for correlations
+
+<img src="img/corr.png" alt="correlations">
+
+Balances were skewed
+
+<img src="img/hist.png" alt="hist">
+
 4.2 Categorical variables
 
 **5. Standardize and encode**
@@ -56,7 +65,9 @@ Usually the observational data for these kinds of problems is somewhat limited i
 **9. Validation of the model**
 
 9.1 Evaluate with Confusion Matrix
+
+<img src="img/cm.png" alt="confusion_matrix">
+
 9.2 Evaluate with ROC and AUC
 
-**10. Identify Overfitting**
-
+<img src="img/roc_auc.png" alt="roc_auc">
